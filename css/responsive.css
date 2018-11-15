@@ -1,0 +1,113 @@
+@media only screen and (max-width: 1500px){
+	.home .sec-1 .hero > h1  {font-size: 85px!important;}
+	.home .sec-1 .hero > h1 span.cursive-big { font-size: 73px!important;}
+	.home .sec-1 .hero > h1 span.cursive-small { font-size: 30px!important;}
+	.home .sec-1 .hero > h1 span.cursive-med { font-size: 62px!important;}
+	.home .sec-1 .hero > h1 span.normal-small { font-size: 39px!important;}
+	.home .sec-1 .hero > h1 span.miraculous { font-size: 130px!important;}
+}
+
+
+
+@media only screen and (max-width: 1400px){
+	.home .sec-1 .hero > h1 { font-size: 75px!important;}
+	.home .sec-1 .hero > h1 span.cursive-big {font-size: 63px!important;}
+	.home .sec-1 .hero > h1 span.cursive-med  { font-size: 52px!important;}
+	.home .sec-1 .hero > h1 span.miraculous { font-size: 120px!important;}
+}
+
+
+@media only screen and (max-width: 1200px){
+	.home .sec-1 .hero > h1  {font-size: 65px!important;}
+	.home .sec-1 .hero > h1 span.cursive-big { font-size: 53px!important;}
+	.home .sec-1 .hero > h1 span.cursive-small { font-size: 25px!important;}
+	.home .sec-1 .hero > h1 span.cursive-med { font-size: 42px!important;}
+	.home .sec-1 .hero > h1 span.normal-small { font-size: 34px!important;}
+	.home .sec-1 .hero > h1 span.miraculous { font-size: 110px!important;}
+	.home .sec-3 .hldr_ { max-width: 100%!important; padding: 0px 40px!important;}
+	/*.home .sec-3 .hldr_ .form-part { max-width: 470px!important;}*/
+
+	.home .sec-3 { padding: 50px 0px 20px!important;}
+}
+
+
+@media only screen and (max-width: 999px){
+	.nav-custom { display: none;}
+	.home .sec-1 .hero > h1 span.miraculous img { width: 65px!important; height: 65px!important;}
+	.home .sec-3 .hldr_ .mid-part > ul > li .item-hldr aside { width: 100%!important;}
+	.home .sec-3 .hldr_ .mid-part > ul > li:nth-child(odd) .item-hldr article { padding-left: 0px!important;}
+	.home .sec-3 .hldr_ .mid-part > ul > li .item-hldr article{ width: 100%!important; padding: 10px 0px;}
+	.home .sec-2, .home .sec-1 { background-attachment: inherit!important;}
+	/*.home .sec-3 .hldr_ .main-list > li { width: 100%!important;}
+
+	.home .sec-3 .hldr_ .main-list > li .left-part, .home .sec-3 .hldr_ .main-list > li .right-part { padding-left: 0px!important; padding-right: 0px!important;}*/
+
+	.home .sec-3 .hldr_ .main-list > li .left-part h4 { font-size: 20px!important;}
+	.home .sec-3 .hldr_ { padding: 0px 20px!important;}
+	.home .sec-3 .hldr_ .main-list > li .left-part { padding-right: 20px!important;}
+	.home .sec-3 .hldr_ .main-list > li .right-part { padding-left: 20px!important;}
+}
+
+
+
+@media only screen and (max-width: 800px){
+	.home .sec-1 .hero > h1 { font-size: 55px!important;}
+	.home .sec-1 .hero > h1 span.cursive-big { font-size: 43px!important;}
+	.home .sec-1 .hero > h1 span.miraculous { font-size: 100px!important;}
+	.home .sec-1 .hero { width: 100%!important; text-align: center!important; padding: 0px 15px;}
+	.home .sec-2 .hero { width: 100%!important; max-width: 100%!important; text-align: center; left: 50%!important;     padding: 0px 10px;}
+	.home .sec-2 .hero h1, .home .sec-2 .hero h2 { font-size: 30px!important;}
+	.home .sec-3 .hldr_ { padding: 0px 20px!important;}
+	.home .sec-3 .hldr_ .mid-part > ul > li:nth-child(even) .item-hldr article { padding-right: 0px!important;}
+}
+
+
+@media only screen and (max-width: 700px){
+	.home .sec-3 .hldr_ .main-list > li { width: 100%!important;}
+	.home .sec-3 .hldr_ .main-list::after { display: none!important;}
+	.home .sec-3 .hldr_ .main-list > li .left-part{ padding-right: 0px!important;}
+	.home .sec-3 .hldr_ .main-list > li .right-part { padding-left: 0px!important;}
+	.home .sec-3 .hldr_ .main-list > li .left-part > ul > li { margin-bottom: 25px!important;}
+	.home .sec-3 .hldr_ .main-list > li .left-part > ul > li:last-child { margin-bottom: 0px!important;}
+	.home .sec-3 .hldr_ .main-list > li .left-part .center_btm { margin-top: 20px;}
+	.home .sec-3 .hldr_ .main-list > li .right-part {margin-top: 40px;}
+	.home .sec-3 .hldr_ .main-list > li .right-part aside {margin: 0 auto 20px!important;}
+}
+
+
+
+@media only screen and (max-width: 550px){
+	.home .sec-1 .hero > h1 { font-size: 45px!important; line-height: 45px!important;}
+	.home .sec-1 .hero > h1 span.cursive-med { font-size: 40px!important; display: block!important;     margin-bottom: -13px;}
+	.home .sec-1 .hero > h1 span.normal-small { font-size: 30px!important;}
+	.home .sec-1 .hero > h1 span.miraculous { font-size: 90px!important;}
+	.home .sec-1 .hero > h1 span.miraculous img { display: block!important; margin: 10px auto 0;}
+	.home .sec-1 .hero { top: 45%!important;}
+	.home .sec-3 .hldr_ .mid-part > ul > li .item-hldr aside > ul > li { width: 100%!important; padding: 0px!important; margin-bottom: 5px;}
+
+	.home .sec-3 .hldr_ .main-list > li .left-part > ul > li .img_hldr aside { width: 100%!important; padding-left: 0px!important; padding-right: 0px!important; margin-bottom: 10px!important;}
+	.home .sec-3 .hldr_ .small-text { margin-top: 30px!important;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

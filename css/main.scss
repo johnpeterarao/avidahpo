@@ -1,0 +1,319 @@
+/* Web Fonts & Fonts */
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../fonts/bebasneue-webfont.woff2') format('woff2'),
+         url('../fonts/bebasneue-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'miraculouschristmasregular';
+    src: url('../fonts/miraculouschristmas-webfont.woff2') format('woff2'),
+         url('../fonts/miraculouschristmas-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'thirsty_script_extrabold_deRg';
+    src: url('../fonts/thirstyscriptextrabolddemo-webfont.woff2') format('woff2'),
+         url('../fonts/thirstyscriptextrabolddemo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'Didot';
+  src: url('../fonts/Didot.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/Didot.woff') format('woff'), 
+  url('../fonts/Didot.ttf')  format('truetype'), 
+  url('../fonts/Didot.svg#Didot') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Didot';
+  src: url('../fonts/Didot.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/Didot.woff') format('woff'), 
+  url('../fonts/Didot.ttf')  format('truetype'), 
+  url('../fonts/Didot.svg#Didot') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+/* Reset */
+
+* {outline: none; box-sizing: border-box; -webkit-overflow-scrolling: touch}
+a {text-decoration: none; cursor: pointer;}
+body, html, h1, h2, h3, h4, h5, h6, p, header, footer, div, article, section, aside {padding: 0; margin: 0; position: relative;}
+body, html {height: 100%;}
+input, select, textarea, button {outline: 0; border: 0; appearance: none; -webkit-appearance: none; -moz-appearance: none; -o-appearance: none;}
+
+/* Common Classes */
+.wid100 {width:100%; float: left; }
+.fleft {float: left;}
+.fright {float: right;}
+.listn {list-style: none; margin: 0; padding: 0;}
+.defimg {width: 100%; height: auto;}
+.defimg2 {width: auto; height: auto;}
+.coverimg {width: 100%; height: 100%; object-fit: cover;}
+.containimg {width: 100%; height: 100%; object-fit: contain;}
+.pagewrapper {width: 100%;  margin: 0 auto; max-width: 1366px; padding: 0 25px;}
+.pagewrapper2 {width: 100%; margin: 0 auto; max-width: 990px;}
+img {@extend .defimg}
+.close {width: 35px; height: 35px; background: url(../images/iconset1.png) no-repeat right -35px; position: absolute; right: 10px; top: 10px;}
+
+
+/* Colors & Fonts */
+$fontmain: 'bebas_neueregular', Arial, sans-serif;
+$cursive : 'thirsty_script_extrabold_deRg', Arial, sans-serif;
+$fonthead: 'miraculouschristmasregular', Arial, sans-serif;
+$fontdidot : 'Didot', Arial, sans-serif;
+
+/* Colors */
+$white: #fff;
+$yellowgreen: #77bb53;
+$orange: #e48810;
+$lightgreen: #d0cc3a;
+$transorange: rgba(228,136,16,0.7);
+$translightgreen: rgba(194,205,35,0.7);
+$transblack: rgba(0,0,0,0.6);
+$textgray: #353535;
+$darkgray: #2d2d2d;
+
+
+
+.nav-custom { margin-bottom: 0px; position: fixed; top: 0; width: 100%; background: #fff; z-index: 2;
+
+}
+
+
+.overlay-red {   position: absolute; width: 100%; top: 0; left: 0; height: 100%; background: rgba(182, 43, 35, 1); z-index: -1;
+    img {     height: 100%; object-fit: cover;}
+}
+
+.overlay-green {   position: absolute; width: 100%; top: 0; left: 0; height: 100%; background: rgba(24, 138, 68, 1); z-index: -1;
+    img {     height: 100%; object-fit: cover;}
+}
+
+
+.home {
+    .sec-1 { height: 100vh; width: 100%; position: relative;  overflow: hidden; /* background: rgba(182, 43, 35, 1); */ background-image: url(../images/sec-1.png); background-attachment: fixed; background-size: cover;
+
+        .hero { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 4; 
+            > h1 { font-size: 97px; color: $white; font-family: $fontmain;
+
+                span.cursive-big { font-family: $cursive; font-size: 85px; text-transform: lowercase;}
+                span.cursive-med { font-family: $cursive; font-size: 73.31px;}
+                span.cursive-small { font-family: $cursive; font-size: 37px; vertical-align: super;}
+                span.normal-small { font-size: 46px;     position: relative; top: -20px;}
+                span.miraculous { font-family: $fonthead; font-size: 143px;
+                    img { width: 79px; height: 79px; max-width: 100%; vertical-align: unset;}
+                }
+
+            }
+        }
+
+
+    }
+
+
+    .sec-2 {     height: calc(100vh - 50px); width: 100%; position: relative;  overflow: hidden;/*  background: #188a44; */  background-image: url(../images/sec-2.png); background-attachment: fixed; background-size: cover;
+
+        .hero {  position: absolute; left: 70%; top: 50%; transform: translate(-50%, -50%); z-index: 3;    max-width: 300px; width: 100%; 
+            h1, h2 { color: $white; font-family: $fontdidot; font-size: 33px; text-align: center; line-height: 43px;
+                span.cursive-small { font-family: $cursive;}
+            }
+
+            h1 { margin-bottom: 40px;}
+        }
+
+
+
+    }
+
+
+
+    .sec-3 {  background: url(../images/sec-3.png); padding: 80px 0px 20px; background-size: cover; background-attachment: fixed;     min-height: calc(100vh - 50px);
+
+        .redoverlay { background: rgba(163, 42, 46, 1); position: absolute; height: 100%; width: 100%; top: 0; z-index: -1;}
+
+        .hldr_ { max-width: 80.42%; width: 100%; margin: 0 auto;
+
+
+            /* .top_part { margin-bottom: 15px;
+
+                aside { max-width: 167px; width: 100%; margin: 0 auto 30px;
+
+                }
+
+                article { text-align: center; 
+                    > p { font-family: $fontdidot; color: $white; font-size: 18px; letter-spacing: 1px;}
+                }
+
+            }
+
+            .mid-part {
+                > ul {
+                    > li { margin-bottom: 30px;
+                        .item-hldr { display: -webkit-box;  display: -moz-box;  display: -ms-flexbox;  display: -webkit-flex;  display: flex;  -webkit-flex-flow: row wrap;  justify-content: flex-start;  flex-wrap: wrap; align-items: center;
+
+                            aside { width: 40%;
+                                > ul { display: -webkit-box;  display: -moz-box;  display: -ms-flexbox;  display: -webkit-flex;  display: flex;  -webkit-flex-flow: row wrap;  justify-content: flex-start;  flex-wrap: wrap;
+                                    > li {  width: 50%; 
+                                        aside {
+                                            img { width: 100%;}
+                                        }
+                                    }
+
+                                    > li:first-child { padding-right: 7px;}
+                                    > li:last-child { padding-left: 7px;}
+                                }
+                            }
+
+                            article { width: 60%; 
+                                p { font-family: $fontdidot; font-size: 18px; color: $white; letter-spacing: 1px;}
+                            }
+                        }
+                    }
+
+                    > li:nth-child(even){
+                        .item-hldr {
+                            article { padding-right: 20px; padding-left: 0px;}
+                        }
+                    }
+
+                    > li:nth-child(odd){
+                        .item-hldr {
+                            article { padding-left: 20px; padding-right: 0px;}
+                        }
+                    }
+                }
+            }
+
+
+            .form-part { max-width: 42.20%; width: 100%; margin: 0 auto;  text-align: center;
+                > p { text-align: center; font-family: $fontdidot; font-size: 18px; color: $white;  letter-spacing: 1px;}
+
+                > ul { margin-top: 15px;
+                    > li { margin-bottom: 25px;
+                        h6 { font-family: $fontdidot; font-size: 18px; text-transform: uppercase; letter-spacing: 1px; color: $white; margin-bottom: 5px;}
+
+                        input[type="number"], input[type="email"], input[type="text"] {  font-family: $fontdidot; font-size: 16px; height: 35px; width: 100%;  padding-left: 15px;} 
+                    }
+
+                }
+
+            }
+
+
+            .btm-part { text-align: center; 
+                > p { font-family: $fontdidot; font-size: 8px; color: $white;}
+            } */
+
+
+            .main-list { display: -webkit-box;  display: -moz-box;  display: -ms-flexbox;  display: -webkit-flex;  display: flex;  -webkit-flex-flow: row wrap;  justify-content: flex-start;  flex-wrap: wrap; position: relative;
+
+                > li { width: 50%;
+                    .left-part { padding-right: 50px; 
+                        h4 { font-size: 22px; color: $white; font-family: $fontdidot; text-align: center; margin-bottom: 30px;}
+
+                    
+                        > ul {
+                            > li { margin-bottom: 40px;
+                                .img_hldr { display: -webkit-box;  display: -moz-box;  display: -ms-flexbox;  display: -webkit-flex;  display: flex;  -webkit-flex-flow: row wrap;  justify-content: flex-start;  flex-wrap: wrap; margin-bottom: 15px;
+                                    aside { width: 50%; 
+                                        img { }
+                                    }
+                                    aside:first-child { padding-right: 8px;}
+                                    aside:last-child { padding-left: 8px;}
+                                }
+
+                                article {
+                                    p { font-family: $fontdidot; font-size: 16px; color: $white; text-align: center;}
+                                }
+                            }
+                        }
+
+                        .center_btm {  text-align: center;
+                            p { font-family: $fontdidot; font-style: italic; color: $white; font-size: 14px;
+                                a { display: block;  color: $white; text-decoration: none;}
+                            }
+                        }
+                    }
+
+                    .right-part { padding-left: 50px;
+                        aside { max-width: 167px; width: 100%; margin: 0 auto 60px;  }
+
+                        article {
+                            > p { font-family: $fontdidot; font-size: 18px; color: $white; text-align: center; margin-bottom: 15px;}
+
+                            .form-part {
+                                > ul { margin-top: 15px;
+                                    > li { margin-bottom: 25px;
+                                        h6 { font-family: $fontdidot; font-size: 18px; text-transform: uppercase; letter-spacing: 1px; color: $white; margin-bottom: 5px; text-align: center;}
+
+                                        input[type="number"], input[type="email"], input[type="text"] {  font-family: $fontdidot; font-size: 16px; height: 35px; width: 100%;  padding-left: 15px;} 
+                                    }
+
+                                    > li:last-child {  text-align: center; margin-top: 45px; margin-bottom: 0px;
+                                        input[type="submit"] { background: transparent; text-transform: uppercase; color: $white; border: 1px solid $white; padding: 19px 18px; font-family: $fontdidot;}
+                                    }
+
+                                }
+
+                            }
+                        }
+                    }
+
+                }
+
+
+
+            }
+
+            .main-list::after { position: absolute; left: 50%; top: 0; bottom: 0; transform: translate(-50%, 0); background: url(../images/divider.png); content: '';     width: 3px; background-repeat: no-repeat; background-position: center center; background-size: 100% 100%;}
+
+
+            .small-text { margin-top: 50px; text-align: center;
+                > p {font-family: $fontdidot; font-size: 8px; color: $white;}
+            }
+        }
+
+    }
+}
+
+
+
+.angle-holder { position: absolute; bottom: 30px; text-align: center; width: 100%;
+    img { width: 49px; height: 24px; cursor: pointer;}
+}
+
+.backtotop { position: fixed; bottom: 25px; right: 25px; background: #fff; padding: 15px; text-align: center; opacity: 0; transition: 0.3s;
+    a {  text-transform: uppercase; color: #000; text-decoration: none;
+        i { display: block; font-size: 40px;}
+    }
+
+}
+
+.backtotop.active { opacity: 1;}
+
+
+
+
+
